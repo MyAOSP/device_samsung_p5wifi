@@ -45,7 +45,6 @@ lib/hw/hwcomposer.tegra.so
 lib/hw/lights.p3.so
 lib/hw/sensors.p3.so
 lib/libakm.so
-lib/libarccamera.so
 lib/libardrv_dynamic.so
 lib/libcgdrv.so
 lib/liblvvefs.so
@@ -104,9 +103,6 @@ lib/lib_Samsung_Acoustic_Module_Llite.so
 lib/lib_Samsung_Resampler.so
 lib/libsamsungSoundbooster.so
 lib/lib_Samsung_Sound_Booster.so
-lib/lib_SoundAlive_for_ICS_V01009.so
-lib/libseccamera_jni.so
-lib/libseccameracore.so
 lib/libsec-ril-apalone.so
 lib/libsecril-client.so
 lib/libstagefrighthw.so
