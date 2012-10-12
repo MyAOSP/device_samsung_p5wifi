@@ -106,6 +106,9 @@ lib/lib_Samsung_Sound_Booster.so
 lib/libsec-ril-apalone.so
 lib/libsecril-client.so
 lib/libstagefrighthw.so
+lib/libwvm.so
+lib/libWVStreamControlAPI_L3.so
+lib/libwvdrm_L3.so
 lib/omxplayer.so
 usr/share/alsa/alsa.conf
 usr/share/alsa/cards/aliases.conf
