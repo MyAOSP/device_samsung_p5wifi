@@ -21,6 +21,9 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # The gps config appropriate for this device
@@ -45,7 +48,16 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/gps.xml:system/etc/gps.xml
+
+# GPS config
+PRODUCT_PROPERTY_OVERRIDES += \
+  my.gps=novzw
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := p5wifi
 PRODUCT_DEVICE := p5wifi
 PRODUCT_MODEL := p5wifi
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
