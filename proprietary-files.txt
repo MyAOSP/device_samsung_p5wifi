@@ -1,7 +1,6 @@
 bin/gps.cer
 bin/gpsd
 bin/macloader
-bin/sec_keyboard
 bin/tegrastats
 etc/audio/LVVEFS_Rx_Configuration.txt
 etc/audio/LVVEFS_Tx_Configuration.txt
