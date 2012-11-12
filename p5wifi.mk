@@ -29,21 +29,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product, device/samsung/p5-common/p5-common.mk)
+$(call inherit-product, device/samsung/p4-common/p4-common.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/p5wifi/p5wifi-vendor.mk)
 
 # Cameradata
 PRODUCT_COPY_FILES += \
-    device/samsung/p5-common/camera/cameradata/back_camera_test_pattern.yuv:system/cameradata/back_camera_test_pattern.yuv \
-    device/samsung/p5-common/camera/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    device/samsung/p5-common/camera/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-    device/samsung/p5-common/camera/cameradata/front_camera_test_pattern.yuv:system/cameradata/front_camera_test_pattern.yuv
+    device/samsung/p4-common/camera/cameradata/back_camera_test_pattern.yuv:system/cameradata/back_camera_test_pattern.yuv \
+    device/samsung/p4-common/camera/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    device/samsung/p4-common/camera/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+    device/samsung/p4-common/camera/cameradata/front_camera_test_pattern.yuv:system/cameradata/front_camera_test_pattern.yuv
 
 # Hdmi
 PRODUCT_COPY_FILES += \
-    device/samsung/p5-common/hdmi/dectable1.dat:system/etc/hdmi/dectable1.dat \
-    device/samsung/p5-common/hdmi/dectable.dat:system/etc/hdmi/dectable.dat
+    device/samsung/p4-common/hdmi/dectable1.dat:system/etc/hdmi/dectable1.dat \
+    device/samsung/p4-common/hdmi/dectable.dat:system/etc/hdmi/dectable.dat
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay

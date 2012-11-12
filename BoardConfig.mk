@@ -16,8 +16,8 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Include p5-common
--include device/samsung/p5-common/BoardConfigCommon.mk
+# Include p4-common
+-include device/samsung/p4-common/BoardConfigCommon.mk
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/p5wifi/BoardConfigVendor.mk
