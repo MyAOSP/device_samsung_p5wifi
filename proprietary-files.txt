@@ -1,6 +1,7 @@
 bin/gps.cer
 bin/gpsd
 bin/macloader
+bin/sec_keyboard
 bin/tegrastats
 etc/audio/LVVEFS_Rx_Configuration.txt
 etc/audio/LVVEFS_Tx_Configuration.txt
@@ -36,7 +37,6 @@ lib/egl/libEGL_tegra.so
 lib/egl/libGLESv1_CM_tegra.so
 lib/egl/libGLESv2_tegra.so
 lib/hw/audio.primary.tegra.so
-lib/hw/audio_policy.tegra.so
 lib/hw/camera.tegra.so
 lib/hw/gps.tegra.so
 lib/hw/gralloc.tegra.so
@@ -97,11 +97,7 @@ lib/libnvtestresults.so
 lib/libnvtvmr.so
 lib/libnvwinsys.so
 lib/libnvwsi.so
-lib/libsamsungAcousticeq.so
-lib/lib_Samsung_Acoustic_Module_Llite.so
 lib/lib_Samsung_Resampler.so
-lib/libsamsungSoundbooster.so
-lib/lib_Samsung_Sound_Booster.so
 lib/libsec-ril-apalone.so
 lib/libsecril-client.so
 lib/libstagefrighthw.so
