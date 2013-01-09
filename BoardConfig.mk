@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+PRODUCT_AAPT_CONFIG := normal xlarge hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Include p4-common
