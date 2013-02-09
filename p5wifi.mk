@@ -13,9 +13,9 @@
 # limitations under the License.
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
+    LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 PRODUCT_COPY_FILES += \
@@ -35,15 +35,15 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 # LPM (charging animation)
 # this has to be defined before calling p4-common.mk
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/lpm/media/battery_charging_0.qmg:system/media/battery_charging_0.qmg \
-     $(LOCAL_PATH)/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-     $(LOCAL_PATH)/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-     $(LOCAL_PATH)/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-     $(LOCAL_PATH)/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-     $(LOCAL_PATH)/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-     $(LOCAL_PATH)/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
-     $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
-     $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg
+    $(LOCAL_PATH)/lpm/media/battery_charging_0.qmg:system/media/battery_charging_0.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
+    $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg
 
 $(call inherit-product, device/samsung/p4-common/p4-common.mk)
 
@@ -65,11 +65,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/gps.xml:system/etc/gps.xml
+    $(LOCAL_PATH)/gps.xml:system/etc/gps.xml
 
 # GPS config
 PRODUCT_PROPERTY_OVERRIDES += \
-  my.gps=novzw
+    my.gps=novzw
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := p5wifi
